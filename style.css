@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background: #161616;
+    overflow: hidden;
+}
+/* burası hero alanıdır*/
+.container{
+    max-width: 1300px;
+    padding-left: 24px;
+    padding-right: 25px;
+    margin: auto;
+}
+.container .hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bi:hover{
+    font-size: 20px;
+    color: #ab0808;
+    transition: 1s;
+}
+.container .hero:before{
+    content: "ADİDAS";
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 5px;
+    top: 58%;
+    font-size: 150px;
+    opacity: 0.5;
+    z-index: -1;
+    left: 57%;
+    color: rgba(178, 164, 164, 0.17)
+}
+.container .hero i{
+    color: #fff;
+    cursor: pointer;
+}
+.container .hero p{
+    color: #fff;  
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.container .hero .logo{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+.container .hero .logo-two{
+    height: 4px;
+}
+.container .hero .logo .line{
+    display: block;
+    width: 45px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 4px;
+    margin-right: 4px;
+
+}
+/* burası rov alanıdır*/
+.rov{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.rov .colum-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.rov h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 25px 0px;
+
+}
+.rov p{
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    background: rgb(255, 81, 0);
+    padding: 8px 20px;
+    margin-top: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background: rgb(76, 7, 7);
+    color: yellow;
+}
+.rov h1 span{
+    color: rgb(179, 27, 27);
+}
+/* RİNG ALANI */
+.ring >img{
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 1px;
+    height: 100%;
+    max-width: 580px;
+    border-radius: 50%;
+    
+}
+.colum-2 .circle-ring{
+    padding-left: 130px;
+    padding-top: 60px;
+}
+.colum-2 .ring{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-left: 140px;
+    margin-top: -25px;
+    border-radius: 50%;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    z-index: -1;
+    box-shadow: 0px 0px 20px rgba(0,0,0, 0.5);
+   
+}
+.colum-2 .ring:before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 8px solid #fffa17;
+    border-right: 8px solid #fffa17;
+    z-index: -1;
+    border-radius: 50%;
+    animation-name: returnCircle;
+    animation: returnCircle 10s linear infinite;
+}
+
+.colum-2 .ring .circle{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    z-index: -1;
+    background: transparent;
+    transform-origin: left;
+    animation:return 10s linear infinite ;
+  
+
+}
+.colum-2 .ring .circle:before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    width: 16px;
+    margin-right: 0%;
+    height: 16px;
+    background: #fffa17;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: opx 0px 20px #ab0808;
+}
+
+.colum-2 .ring-two{
+    position: absolute;
+    top: 13%;
+    left: 56%;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 8px solid #3c3c3c;
+    border-radius: 50%;
+}
+.colum-2 .ring-two:before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-left: 4px solid #fffa17;
+    border-bottom: 4px solid #fffa17;
+    border-radius: 50%;
+    animation-name: returnCircle;
+    animation: returnCircle2 10s linear infinite;
+}
+
+
+.colum-2 .ring-two .circle-two{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation:return2 10s linear infinite ;
+}
+.colum-2 .ring-two .circle-two:before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    width: 16px;
+    margin-right: 0%;
+    height: 16px;
+    background: #fffa17;
+    border-radius: 50%;
+    box-shadow: opx 0px 20px #ab0808;
+    animation: ;
+} 
+
+/* animasyonlar kısmı*/
+
+
+
+
+@keyframes returnCircle {
+    0%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(345deg); 
+    }   
+}
+
+@keyframes return {
+    0%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(405deg); 
+    }   
+}
+
+
+@keyframes returnCircle2 {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(-405deg); 
+    }   
+}
+
+@keyframes return2 {
+    0%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(-365deg); 
+    }   
+}
