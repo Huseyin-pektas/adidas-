@@ -6,4 +6,4 @@ adidas ayakkabı markası güzel bir markadır herkese tavsiye ediyorum. kullana
 
 
  <h2>Ekran görüntüsü</h2>
- ![](Screen..gif)
+ <a href=https://github.com/sefa1-sonmez/adidas-/blob/main/Screen..gif"">scree.gif</a>
